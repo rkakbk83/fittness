@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=League+Gothic&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="ccs/styl1.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        color: beige;
+        margin: 0px;
+        padding: 0px;
+        background: url("back1.webp");
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 0px;
+        display: inline-block;
+
+    }
+
+    .left img {
+        position: relative;
+        bottom: 20px;
+        width: 150px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: white;
+        position: relative;
+        text-align: center;
+        bottom: 70px;
+    }
+
+    .mid {
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 24px 24px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(52, 54, 54);
+    }
+
+    .containor {
+        border: 2px solid rgb(245, 247, 245);
+        margin: 90px 90px;
+        padding: 70px 40px;
+        border-radius: 16px;
+        width: 35%;
+    }
+    .formgroup input{
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        text-align: center;
+        display: block;
+        width: 70%;
+        border: 2px solid black;
+        margin:10px auto ;
+        padding: 1px;
+        font-size: 20px ;
+        border-radius: 4px ;
+    }
+    .containor h1{
+        text-align: center;
+    }
+    .containor button{
+        display: block;
+        width: 40%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div><strong>A.A.A</strong></div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Fitness Cal</a> </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="containor">
+        <h1>Join Best Gym(A.A.A) of Varanasi</h1>
+        <form action="noction.php">
+            <div class="formgroup">
+               <input type="text" name="" placeholder="Inter Your Name">
+            </div>
+            <div class="formgroup">
+               <input type="text" name="" placeholder="Inter Your Gender">
+            </div>
+            <div class="formgroup">
+               <input type="text" name="" placeholder="Inter Your Age">
+            </div>
+            <div class="formgroup">
+               <input type="text" name="" placeholder="Inter Your Address">
+            </div>
+            <div class="formgroup">
+               <input type="text" name="" placeholder="Inter Your Email Id">
+            </div>
+            <div class="formgroup">
+               <input type="text" name="" placeholder="Inter Your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
